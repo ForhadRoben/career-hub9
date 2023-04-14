@@ -9,8 +9,9 @@ import SingleFeature from './SingleFeature';
 const Home = () => {
     const featuresData = useLoaderData()
     const [categories, setCategories] = useState([])
+    const [seeAllJobs, setSeeAllJobs] = useState(false)
     const [featuresJobs, setFeaturesJobs] = useState(featuresData)
-    console.log(featuresData);
+    // console.log(featuresData);
     useEffect(() => {
         fetch("/category.json")
             .then(res => res.json())
@@ -34,10 +35,26 @@ const Home = () => {
             <p className='text-center font-semibold'>You can search millions of jobs online to find the next step in your career. With tools for job search, resumes, company reviews and more...</p>
             <div className='grid lg:grid-cols-2 gap-4 m-8'>
                 {
-                    featuresJobs.map(feature => <SingleFeature
+                    seeAllJobs ? featuresJobs.map(feature => <SingleFeature
                         key={feature.id}
                         feature={feature} ></SingleFeature>)
+                        :
+                        featuresJobs.
+                            slice(0, 4)
+                            .map(feature => <SingleFeature
+                                key={feature.id}
+                                feature={feature}></SingleFeature>)
                 }
+            </div>
+            <div className="text-center">
+                {!seeAllJobs && (
+                    <button
+                        onClick={() => setSeeAllJobs(true)}
+                        className="btn btn-sm btn-secondary my-4"
+                    >
+                        See All Jobs
+                    </button>
+                )}
             </div>
         </div>
     );
