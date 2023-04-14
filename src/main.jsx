@@ -5,6 +5,8 @@ import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import ErrorPage from './components/ErrorPage'
 import Home from './components/Home'
+import FeatureDetails from './featureDetails'
+import AppliedJobs from './components/AppliedJobs'
 
 const router = createBrowserRouter([
 
@@ -21,9 +23,23 @@ const router = createBrowserRouter([
       {
         path: "/home", element: <Home></Home>
       },
-      // {
-      //   path: "/home", element: <Home></Home>
-      // },
+      {
+        path: "applied_jobs",
+        element: <AppliedJobs></AppliedJobs>
+      },
+      {
+        path: "feature/:featureId",
+        element: <FeatureDetails />,
+
+        loader: async ({ params }) => {
+          const res = await fetch("/allJobs.json");
+          const features = await res.json();
+
+          const detailsFeatures = features.find(feature => feature.id == params.featureId);
+          return detailsFeatures;
+
+        }
+      },
     ]
 
   }

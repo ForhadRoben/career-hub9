@@ -1,8 +1,9 @@
 import React from 'react';
 import { MapPinIcon, CurrencyDollarIcon } from '@heroicons/react/24/solid'
+import { Link } from 'react-router-dom';
 
 const SingleFeature = ({ feature }) => {
-    console.log(feature);
+    // console.log(feature);
     const { id, location, jobTitle, companyLogo, companyName, jobType, salary } = feature;
     return (
         <div className="card w-full bg-gray-100">
@@ -20,7 +21,7 @@ const SingleFeature = ({ feature }) => {
                     <p className='flex'><MapPinIcon className='w-6 h-6' />{location}</p>
                     <p className='flex'><CurrencyDollarIcon className='w-6 h-6' />{salary}</p>
                 </div>
-                <button className="btn btn-info w-40 text-white font-semibold">View Details</button>
+                <Link to={`../feature/${id}`} className="btn btn-info w-40 text-white font-semibold">View Details</Link>
             </div>
         </div>
     );

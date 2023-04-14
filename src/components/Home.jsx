@@ -39,8 +39,7 @@ const Home = () => {
                         key={feature.id}
                         feature={feature} ></SingleFeature>)
                         :
-                        featuresJobs.
-                            slice(0, 4)
+                        featuresJobs.slice(0, 4)
                             .map(feature => <SingleFeature
                                 key={feature.id}
                                 feature={feature}></SingleFeature>)
@@ -50,7 +49,7 @@ const Home = () => {
                 {!seeAllJobs && (
                     <button
                         onClick={() => setSeeAllJobs(true)}
-                        className="btn btn-sm btn-secondary my-4"
+                        className="btn btn-secondary w-40 text-white font-bold my-4 "
                     >
                         See All Jobs
                     </button>
