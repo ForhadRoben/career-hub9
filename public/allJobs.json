@@ -1,0 +1,116 @@
+[
+  {
+    "id": 1,
+    "companyLogo": "https://i.ibb.co/zFrnxH9/Google-Logo-770x360.jpg",
+    "jobTitle": "Software Engineer",
+    "companyName": "Google LLC",
+    "jobType": [
+      "Onsite",
+      "Full Time"
+    ],
+    "location": "Mountain View, CA, USA",
+    "salary": "$100,000 - $120,000",
+    "jobDescription": "We are looking for engineers who bring fresh ideas from all areas, including information retrieval, distributed computing, large-scale system design, networking and data storage, security, artificial intelligence, natural language processing, UI design and mobile; the list goes on and is growing every day.",
+    "jobResponsibility": "With your technical expertise you will manage project priorities, deadlines, and deliverables. You will design, develop, test, deploy, maintain, and enhance software solutions.",
+    "educationalRequirements": "Bachelor's degree in Computer Science or related field",
+    "experiences": "3+ years of professional software development experience",
+    "phone": "123-456-7890",
+    "email": "jobs@google.com",
+    "address": "1234 Example St, City, State, Zip"
+  },
+  {
+    "id": 2,
+    "companyLogo": "https://i.ibb.co/3C0V9PR/Spotify-logo-720x535.png",
+    "jobTitle": "Frontend Developer",
+    "companyName": "Spotify ",
+    "jobType": [
+      "Remote",
+      "Full Time"
+    ],
+    "location": "New York, NY",
+    "salary": "$80,000 - $100,000",
+    "jobDescription": "Demonstrable experience with other front-end technologies such as HTML, CSS, and SASS,A strong understanding of web standards and accessibility,experience optimizing front-end components for maximum flexibility, re-use, and performance across a wide array of web-capable devices and browsers.",
+    "jobResponsibility": "Interpret and refine non-technical requirements into actionable technical designs.Design, develop, and implement user-friendly, data-centric, front-end user experiences.Optimize front-end systems performance.",
+    "educationalRequirements": "Bachelor's degree in Computer Science or related field",
+    "experiences": "3+ years of experience in frontend development",
+    "phone": "987-654-3210",
+    "email": "careers@spotify.com",
+    "address": "5678 Example Ave, City, State, Zip"
+  },
+  {
+    "id": 3,
+    "companyLogo": "https://i.ibb.co/NZHcnKF/Netflix4627.jpg",
+    "jobTitle": "Backend Developer",
+    "companyName": "Netflix",
+    "jobType": [
+      "Remote",
+      "Part Time"
+    ],
+    "location": "San Francisco, CA",
+    "salary": "$90,000 - $110,000",
+    "jobDescription": " We are looking for a skilled and experienced Backend Developer. In this role, you will be responsible for the development and maintenance of our backend services (including services in Java and Scala languages and AWS Lambda in TypeScript), automated web crawler as well as managing our AWS infrastructure using Terraform. ",
+    "jobResponsibility": "Responsibilities include designing, implementing, and maintaining server-side applications, should be able to conduct software analysis, testing and debugging, as well as recognize and solve production and non-production application issues",
+    "educationalRequirements": "Bachelor's degree in Computer Science or related field",
+    "experiences": "4+ years of experience in backend development",
+    "phone": "456-789-0123",
+    "email": "careers@netflix.com",
+    "address": "9101 Example Rd, City, State, Zip"
+  },
+  {
+    "id": 4,
+    "companyLogo": "https://i.ibb.co/1bZTwh6/Amazon.png",
+    "jobTitle": "Full Stack Developer",
+    "companyName": "Amazon",
+    "jobType": [
+      "Onsite",
+      "Full-time"
+    ],
+    "location": "Seattle, WA",
+    "salary": "$95,000 - $115,000",
+    "jobDescription": "We are looking for a highly skilled computer programmer who is comfortable with both front and back end programming. Full stack developers are responsible for developing and designing front end web architecture, ensuring the responsiveness of applications, and working alongside graphic designers for web design features, among other duties.",
+    "jobResponsibility": "designing user interactions on websites, developing servers, and databases for website functionality, and coding for mobile platforms.",
+    "educationalRequirements": "Bachelor's degree in Computer Science or related field",
+    "experiences": "3+ years of experience in full stack development",
+    "phone": "789-012-3456",
+    "email": "jobs@amazon.com",
+    "address": "12345 Example Blvd, City, State, Zip"
+  },
+  {
+    "id": 5,
+    "companyLogo": "https://i.ibb.co/V9PBxcN/IBM-logo-svg.png",
+    "jobTitle": "Data Scientist",
+    "companyName": "IBM Corporation",
+    "jobType": [
+      "Onsite",
+      "Part Time"
+    ],
+    "location": "Austin, TX",
+    "salary": "$120,000 - $140,000",
+    "jobDescription": "We are looking for a Data Scientist who will support our product, sales, leadership and marketing teams with insights gained from analyzing company data. The ideal candidate is adept at using large data sets to find opportunities for product and process optimization and using models to test the effectiveness of different courses of action. ",
+    "jobResponsibility": "Work with stakeholders throughout the organization to identify opportunities for leveraging company data to drive business solutions.Mine and analyze data from company databases to drive optimization and improvement of product development, marketing techniques and business strategies.",
+    "educationalRequirements": "Master's or PhD in Computer Science, Statistics, or related field",
+    "experiences": "5+ years of experience in data science or machine learning",
+    "phone": "123-456-7890",
+    "email": "careers@ibm.com",
+    "address": "6789 Example Dr, City, State, Zip"
+  },
+  {
+    "id": 6,
+    "companyLogo": "https://i.ibb.co/G92dqKh/TCS.jpg",
+    "jobTitle": "DevOps Engineer",
+    "companyName": "Tata Consultancy Services",
+    "jobType": [
+      "Remote",
+      "Full Time"
+    ],
+    "location": "Mumbai,India",
+    "salary": "$100,000 - $120,000",
+    "jobDescription": "We are looking for a DevOps Engineer to help us build functional systems that improve customer experience.DevOps Engineer responsibilities include deploying product updates, identifying production issues and implementing integrations that meet customer needs. If you have a solid background in software engineering and are familiar with Ruby or Python, we’d like to meet you.",
+    "jobResponsibility": "Implement integrations requested by customers,Deploy updates and fixes,Provide Level 2 technical support,Build tools to reduce occurrences of errors and improve customer experience,Develop software to integrate with internal back-end systems",
+    "educationalRequirements": "Bachelor's degree in Computer Science or related field",
+    "experiences": "3+ years of experience in DevOps or related field",
+    "phone": "987-654-3210",
+    "email": "jobs@tcs.com",
+    "address": "9876 Example Lane, City, State, Zip"
+  }
+]
