@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "companyLogo": "https://i.ibb.co/zFrnxH9/Google-Logo-770x360.jpg",
+    "companyLogo": "https://i.ibb.co/0r3d7Zq/google-1-1-1.png",
     "jobTitle": "Software Engineer",
     "companyName": "Google LLC",
     "jobType": [
@@ -20,9 +20,9 @@
   },
   {
     "id": 2,
-    "companyLogo": "https://i.ibb.co/3C0V9PR/Spotify-logo-720x535.png",
+    "companyLogo": "https://i.ibb.co/35KHfr1/Group-10021.png",
     "jobTitle": "Frontend Developer",
-    "companyName": "Spotify ",
+    "companyName": "Airbnb ",
     "jobType": [
       "Remote",
       "Full Time"
@@ -34,12 +34,12 @@
     "educationalRequirements": "Bachelor's degree in Computer Science or related field",
     "experiences": "3+ years of experience in frontend development",
     "phone": "987-654-3210",
-    "email": "careers@spotify.com",
+    "email": "careers@airbnb.com",
     "address": "5678 Example Ave, City, State, Zip"
   },
   {
     "id": 3,
-    "companyLogo": "https://i.ibb.co/NZHcnKF/Netflix4627.jpg",
+    "companyLogo": "https://i.ibb.co/5YLQXdg/netflix-4-1.png",
     "jobTitle": "Backend Developer",
     "companyName": "Netflix",
     "jobType": [
@@ -58,9 +58,9 @@
   },
   {
     "id": 4,
-    "companyLogo": "https://i.ibb.co/1bZTwh6/Amazon.png",
+    "companyLogo": "https://i.ibb.co/4s0zLtp/tesla-9-1.png",
     "jobTitle": "Full Stack Developer",
-    "companyName": "Amazon",
+    "companyName": "TESLA",
     "jobType": [
       "Onsite",
       "Full-time"
@@ -72,7 +72,7 @@
     "educationalRequirements": "Bachelor's degree in Computer Science or related field",
     "experiences": "3+ years of experience in full stack development",
     "phone": "789-012-3456",
-    "email": "jobs@amazon.com",
+    "email": "jobs@tesla.com",
     "address": "12345 Example Blvd, City, State, Zip"
   },
   {

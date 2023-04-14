@@ -1,11 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import Header from './Header';
 import SingleCategory from './SingleCategory';
+import { useLoaderData } from 'react-router-dom';
+import SingleFeature from './SingleFeature';
 
 
 
 const Home = () => {
+    const featuresData = useLoaderData()
     const [categories, setCategories] = useState([])
+    const [featuresJobs, setFeaturesJobs] = useState(featuresData)
+    console.log(featuresData);
     useEffect(() => {
         fetch("/category.json")
             .then(res => res.json())
@@ -15,9 +20,9 @@ const Home = () => {
     return (
         <div>
             <Header></Header>
-            <h1 className='text-center text-2xl font-semibold'>Job Category List</h1>
-            <p className='text-center'>Explore thousands of job opportunities with all the information you need. Its your future</p>
-            <div className='grid lg:grid-cols-4 gap-4 m-4'>
+            <h1 className='mt-6 text-center text-3xl font-semibold'>Job Category List</h1>
+            <p className='text-center font-semibold'>Explore thousands of job opportunities with all the information you need. Its your future. Explore it...</p>
+            <div className='grid lg:grid-cols-4 gap-4 m-8'>
 
                 {
                     categories.map(category => <SingleCategory
@@ -25,7 +30,15 @@ const Home = () => {
                         category={category}></SingleCategory>)
                 }
             </div>
-            <p>this is home</p>
+            <h1 className='mt-6 text-center text-3xl font-semibold'>Featured Jobs</h1>
+            <p className='text-center font-semibold'>You can search millions of jobs online to find the next step in your career. With tools for job search, resumes, company reviews and more...</p>
+            <div className='grid lg:grid-cols-2 gap-4 m-8'>
+                {
+                    featuresJobs.map(feature => <SingleFeature
+                        key={feature.id}
+                        feature={feature} ></SingleFeature>)
+                }
+            </div>
         </div>
     );
 };
