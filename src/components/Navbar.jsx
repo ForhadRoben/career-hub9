@@ -19,7 +19,7 @@ const Navbar = () => {
                         </span>
                     </Link>
                     <ul className="flex items-center hidden  space-x-8 lg:flex">
-                        <li>
+                        {/* <li>
                             <NavLink
                                 to="/home"
                                 aria-label="Home"
@@ -29,7 +29,7 @@ const Navbar = () => {
                             >
                                 Home
                             </NavLink>
-                        </li>
+                        </li> */}
                         <li>
                             <NavLink
                                 to="/applied_jobs"
@@ -122,7 +122,7 @@ const Navbar = () => {
                                     </div>
                                     <nav>
                                         <ul className="space-y-4 ">
-                                            <li>
+                                            {/* <li>
                                                 <NavLink
                                                     to="/home"
                                                     aria-label="Home"
@@ -132,7 +132,7 @@ const Navbar = () => {
                                                 >
                                                     Home
                                                 </NavLink>
-                                            </li>
+                                            </li> */}
                                             <li>
                                                 <NavLink
                                                     to="/applied_jobs"

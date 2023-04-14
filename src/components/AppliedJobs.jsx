@@ -23,8 +23,8 @@ const AppliedJobs = () => {
     return (
         <div>
 
-            <div className="my-3">
-                <label htmlFor="">Filter Order: </label>
+            <div className="my-3 text-center mx-4">
+                <label htmlFor="">Filter: </label>
                 <select onChange={handleFilter} className="select select-bordered w-full max-w-xs ml-2">
                     <option disabled selected>
                         Choose Here
@@ -36,7 +36,7 @@ const AppliedJobs = () => {
 
             {filterOrder.length > 0 ? (
                 filterOrder?.map((feature) => (
-                    <div className="my-4">
+                    <div className="my-4 mx-4">
                         <SingleFeature feature={feature} />
                     </div>
                 ))

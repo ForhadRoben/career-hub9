@@ -39,10 +39,9 @@ const Home = () => {
                         key={feature.id}
                         feature={feature} ></SingleFeature>)
                         :
-                        featuresJobs.slice(0, 4)
-                            .map(feature => <SingleFeature
-                                key={feature.id}
-                                feature={feature}></SingleFeature>)
+                        featuresJobs.slice(0, 4).map(feature => <SingleFeature
+                            key={feature.id}
+                            feature={feature}></SingleFeature>)
                 }
             </div>
             <div className="text-center">
