@@ -18,7 +18,7 @@ const Navbar = () => {
                             WorldWide  <span className='text-green-500'>IT Jobs</span>
                         </span>
                     </Link>
-                    <ul className="flex items-center hidden space-x-8 lg:flex">
+                    <ul className="flex items-center hidden  space-x-8 lg:flex">
                         <li>
                             <NavLink
                                 to="/home"
@@ -63,7 +63,9 @@ const Navbar = () => {
                                 Blogs
                             </NavLink>
                         </li>
+                        <button className="btn btn-active btn-info  text-white font-semibold">Start Applying</button>
                     </ul>
+
                     <div className="lg:hidden">
                         <button
                             aria-label="Open Menu"
@@ -164,7 +166,9 @@ const Navbar = () => {
                                                     Blogs
                                                 </NavLink>
                                             </li>
+                                            <button className="btn btn-active btn-info text-white font-semibold">Start Applying</button>
                                         </ul>
+
                                     </nav>
                                 </div>
                             </div>
