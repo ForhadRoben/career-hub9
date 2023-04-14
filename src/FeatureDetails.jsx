@@ -5,10 +5,21 @@ import {
 } from '@heroicons/react/24/solid'
 
 
-const FeatureDetails = ({ feature }) => {
-    const jobDetails = useLoaderData();
-    console.log(jobDetails);
-    const { id, location, jobTitle, companyLogo, companyName, jobType, salary, jobDescription, jobResponsibility, educationalRequirements, experiences, phone, email, address } = jobDetails;
+const FeatureDetails = () => {
+    const feature = useLoaderData();
+    console.log(feature);
+    const { id, location, jobTitle, companyLogo, companyName, jobType, salary, jobDescription, jobResponsibility, educationalRequirements, experiences, phone, email, address } = feature;
+
+    const handleApplyNow = () => {
+        const storedData = JSON.parse(localStorage.getItem("apply"));
+        if (storedData) {
+            localStorage.setItem("apply", JSON.stringify([...storedData, feature]))
+        } else {
+            localStorage.setItem("apply", JSON.stringify([feature]))
+        }
+
+    }
+
     return (
         <div className='grid grid-cols-3 gap-4 container mx-4'>
             <div className='lg:col-span-2'>
@@ -28,7 +39,7 @@ const FeatureDetails = ({ feature }) => {
                 <p className='flex'><PhoneIcon className='w-6 h-6 text-white' /><span className='font-bold'>Phone:</span>{phone}</p>
                 <p className='flex'><AtSymbolIcon className='w-6 h-6 text-white' /><span className='font-bold'>Email:</span>{email}</p>
                 <p className='flex'><MapPinIcon className='w-6 h-6 text-white' /><span className='font-bold'>Address:</span>{address}</p>
-                <button className="btn btn-info w-40 text-white font-semibold">Apply Now</button>
+                <button onClick={handleApplyNow} className="btn btn-info w-40 text-white font-semibold">Apply Now</button>
             </div>
         </div>
     );
